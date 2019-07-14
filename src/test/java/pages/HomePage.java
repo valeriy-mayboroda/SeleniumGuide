@@ -13,9 +13,8 @@ public class HomePage {
     private String chapter = "a[href*=chapter%d]";
     private final Logger logger = LoggerFactory.getLogger(HomePage.class);
 
-    public ChapterPage clickChapter(int number) {
+    public void clickChapter(int number) {
         $(By.cssSelector(String.format(chapter, number))).click();
         logger.info(String.format("Link 'Chapter%d' is clicked", number));
-        return new ChapterPage();
     }
 }

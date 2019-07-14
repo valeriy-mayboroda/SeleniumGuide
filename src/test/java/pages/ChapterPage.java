@@ -20,9 +20,8 @@ public class ChapterPage {
         return text;
     }
 
-    public HomePage clickHomePageLink() {
+    public void clickHomePageLink(){
         $(homePage).click();
         logger.info("HomePage link is clicked");
-        return new HomePage();
     }
 }

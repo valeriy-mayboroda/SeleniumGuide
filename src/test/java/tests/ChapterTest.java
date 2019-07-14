@@ -18,7 +18,7 @@ public class ChapterTest extends BaseTest {
 
         open("http://book.theautomatedtester.co.uk");
         homePage.clickChapter(1);
-        Assert.assertEquals("Assert that this text is on the page", chapterPage.getChapterText());
+        Assert.assertEquals(chapterPage.getChapterText(), "Assert that this text is on the page");
         chapterPage.clickHomePageLink();
     }
 }
