@@ -1,5 +1,5 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Selenium: Guide" thread-count="1" parallel="classes">
+<suite name="Selenium: Guide">
     <test name="Test">
         <classes>
             <class name="tests.ChapterTest"/>
