@@ -9,7 +9,7 @@
 * [Install maven](https://maven.apache.org/install.html)
 * Download and install last version of [jdk](https://www.oracle.com/technetwork/java/javase/downloads/index.html)
 * Download [ChromeDriver](http://chromedriver.chromium.org/)
-* Add path to ChromeDriver to environment variable
+* Update env variable 'Path' with the path to ChromeDriver
 
 ### Clone project and run tests
 
