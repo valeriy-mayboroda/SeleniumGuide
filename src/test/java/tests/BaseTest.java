@@ -20,13 +20,11 @@ import static com.codeborne.selenide.WebDriverRunner.setWebDriver;
  */
 public abstract class BaseTest {
     private final Logger logger = LoggerFactory.getLogger(BaseTest.class);
-    private String driverPath = "D:/chromedriver/chromedriver.exe";
 
     @BeforeSuite
     public void initWebDriver() {
         browser = "chrome";
         ChromeOptions options = new ChromeOptions();
-        System.setProperty("webdriver.chrome.driver", driverPath);
         options.setExperimentalOption("useAutomationExtension", false);
         options.addArguments("--ignore-certificate-errors");
         options.addArguments("start-maximized");
